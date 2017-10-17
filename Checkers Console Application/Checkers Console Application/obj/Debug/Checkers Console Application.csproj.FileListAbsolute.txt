@@ -1,0 +1,7 @@
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\bin\Debug\Checkers Console Application.exe.config
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\bin\Debug\Checkers Console Application.exe
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\bin\Debug\Checkers Console Application.pdb
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\obj\Debug\Checkers Console Application.csprojResolveAssemblyReference.cache
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\obj\Debug\Checkers Console Application.csproj.CoreCompileInputs.cache
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\obj\Debug\Checkers Console Application.exe
+C:\Users\craig\source\repos\Checkers Console Application\Checkers Console Application\obj\Debug\Checkers Console Application.pdb
