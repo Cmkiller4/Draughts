@@ -88,8 +88,7 @@ namespace Checkers_Console_Application
 		{
 			int[,] array = new int[8, 8];
 			Create_Board(ref array);
-			View_Board(ref array);
-			//test(ref array);
+			Starting_View_Board(ref array);
 		}
 
 
@@ -195,35 +194,22 @@ namespace Checkers_Console_Application
 			}
 		}
 
+		public static void Starting_View_Board(ref int[,] array)
+		{
+
+			Console.Clear();
+			Console.WriteLine("   " + "0" + " " + "1" + " " + "2" + " " + "3" + " " + "4" + " " + "5" + " " + "6" + " " + "7");
+			Console.WriteLine();
+			for (int x = 0; x < 8; x++)
+			{
+				Console.WriteLine(x + "  " + array[x, 0] + " " + array[x, 1] + " " + array[x, 2] + " " + array[x, 3] + " " + array[x, 4] + " " + array[x, 5] + " " + array[x, 6] + " " + array[x, 7]);
+			}
+
+			Player_VS_Player.Player_Ones_Turn(ref array);
+		}
 
 		public static void View_Board(ref int[,] array)
 		{
-
-			//This block of code should be working but it is not and only checks what the first index of the array contains and then copys it fore the rest
-			//this block of code is not in use due to it not fully working yet and when testing it takes ages to get past as its not fully implemented
-			//for (int x = 0; x < 8; x++)
-			//{
-			//	for (int y = 0; y < 8; y++)
-			//	{
-			//		if (array[x, y] == 1)
-			//		{
-			//			Console.ForegroundColor = ConsoleColor.Blue;
-			//			Console.Write( y + " ==1");
-			//		}
-			//		else if (array[x, y] == 0)
-			//		{
-			//			Console.ForegroundColor = ConsoleColor.White;
-			//			Console.Write(y + " ==0");
-			//			Console.Read();
-			//		}
-			//		else if (array[x, y] == 3)
-			//		{
-			//			Console.ForegroundColor = ConsoleColor.Red;
-			//			Console.Write(y + " ==2");
-			//			Console.Read();
-			//		}
-			//	}
-			//}
 
 			Console.Clear();
 			Console.WriteLine("   " + "0" + " " + "1" + " " + "2" + " " + "3" + " " + "4" + " " + "5" + " " + "6" + " " + "7");
@@ -232,15 +218,7 @@ namespace Checkers_Console_Application
 			{
 				Console.WriteLine(x + "  " +array[x, 0] + " " + array[x, 1] + " " + array[x, 2] + " " + array[x, 3] + " " + array[x, 4] + " " + array[x, 5] + " " + array[x, 6] + " " + array[x, 7]);
 			}
-
-			//if (turn == 1)
-			//{
-			Player_VS_Player.Player_Ones_Turn(ref array);
-			//}
-			//else if (turn == 2)
-			//{
-			Player_VS_Player.Player_Twos_Turn(ref array);
-			//}
+			return;
 		}
 
 
